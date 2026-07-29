@@ -1,17 +1,19 @@
 import os
 from dotenv import load_dotenv
 from pydub import AudioSegment
+import shutil
 import yt_dlp
 
 load_dotenv()
 
 FFMPEG_DIR = os.getenv("FFMPEG_DIR")
 
-if not FFMPEG_DIR:
-    raise ValueError("FFMPEG_DIR not found in .env file")
-
-AudioSegment.converter = os.path.join(FFMPEG_DIR, "ffmpeg.exe")
-AudioSegment.ffprobe = os.path.join(FFMPEG_DIR, "ffprobe.exe")
+if FFMPEG_DIR:
+    AudioSegment.converter = os.path.join(FFMPEG_DIR, "ffmpeg.exe")
+    AudioSegment.ffprobe = os.path.join(FFMPEG_DIR, "ffprobe.exe")
+else:
+    AudioSegment.converter = shutil.which("ffmpeg")
+    AudioSegment.ffprobe = shutil.which("ffprobe")
 
 DOWNLOAD_DIR = 'downloads'
 os.makedirs(DOWNLOAD_DIR,exist_ok = True)
