@@ -1,35 +1,46 @@
+# Audio Processing
 yt-dlp>=2024.4.9
 pydub>=0.25.1
 ffmpeg-python>=0.2.0
 
-openai-whisper>=20231117
+# Speech Recognition
+openai-whisper>=20250625
 torch>=2.2.0
 torchaudio>=2.2.0
 
+# Translation
 deep-translator>=1.11.4
 
-langchain>=0.2.0
-langchain-core>=0.2.0
-langchain-community>=0.2.0
-langchain-text-splitters>=0.2.0
-langchain-huggingface>=0.0.3
-langchain-chroma>=0.1.2
+# LangChain
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-text-splitters>=0.3.0
+langchain-huggingface>=0.1.0
+langchain-chroma>=0.2.0
 
-langchain-mistralai>=0.1.0
-mistralai>=0.4.0
+# LLM
+langchain-mistralai>=0.2.0
+mistralai>=1.0.0
 
-chromadb>=0.5.0
+# Vector Database
+chromadb>=1.0.0
+
+# Embeddings
 sentence-transformers>=3.0.0
-huggingface-hub>=0.23.0
-tiktoken>=0.7.0
+huggingface-hub>=0.24.0
+tiktoken>=0.8.0
 
-streamlit>=1.35.0
-streamlit-extras>=0.4.0
-watchdog>=4.0.0
+# Web App
+streamlit>=1.46.0
+streamlit-extras>=0.7.0
+watchdog>=6.0.0
 
+# PDF Generation
 reportlab>=4.2.0
 
-python-dotenv>=1.0.0
-numpy>=1.26.0
-requests>=2.32.0
-tqdm>=4.66.0
+# Utilities
+python-dotenv>=1.0.1
+numpy>=1.26.4
+requests>=2.32.3
+tqdm>=4.67.1
