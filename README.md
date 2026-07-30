@@ -191,31 +191,6 @@ Users can ask questions about the meeting using RAG.
 
 ---
 
-# 📷 Application Screenshots
-
-> Add screenshots here after uploading images to GitHub.
-
-Example:
-
-```
-images/
-    home.png
-    summary.png
-    chat.png
-```
-
-Then include:
-
-```markdown
-![Home](images/home.png)
-
-![Summary](images/summary.png)
-
-![Chat](images/chat.png)
-```
-
----
-
 # 🚀 Installation
 
 ## Clone Repository
@@ -303,16 +278,3 @@ streamlit run app.py
 
 ---
 
-# 👨‍💻 Author
-
-**Prathamesh Ravindra Garate**
-
-CDAC DBDA Project
-
----
-
-# ⭐ If you like this project
-
-Please consider giving this repository a ⭐ on GitHub.
-
----
